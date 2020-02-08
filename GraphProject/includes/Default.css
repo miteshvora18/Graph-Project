@@ -1,0 +1,100 @@
+﻿html,body,form
+{
+    margin:0;
+    padding:0;
+    height:100%;
+    background: url("moontree.jpg") repeat scroll 0 0 transparent;
+    border: 0 none;
+    height: 100%;
+    width: 100%;
+    font-family:Comic Sans MS;
+    color:#808080;	
+}
+
+.center
+{
+	margin:0 auto;
+	width:1200px;
+	background-color:#f5f5f5;
+	padding-bottom:60px;
+}
+
+.middle
+{
+	text-align:center;
+}
+
+.btnGraph
+{
+	background-color: #00FF00;
+    border-radius: 20px 20px 20px 20px;
+    color: #000000;
+    font-size: 20px;
+}
+
+.btnGraphSelected
+{
+	background-color:#FF0000;
+	color:#000000;
+	border-radius: 20px 20px 20px 20px;
+    font-size: 20px;
+}
+
+.btnGraph:hover
+{
+	background-color:#FFFF00;
+}
+
+.btnSubmit
+{
+	background-color:#0000FF;
+	color:#FFFFFF;
+	font-size:20px;
+}
+
+.logout
+{
+    float:right;
+    padding-right:10px;
+    text-decoration:none;
+}
+
+a
+{
+    text-decoration:none;
+    color:#93b745;
+}
+
+.btn
+{
+    background-color: #93b745;
+    border: 0 none;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    padding-bottom: 3px;
+    font-family:Comic Sans MS
+}
+
+.adminGridQList
+{
+    word-break:break-all;
+}
+
+table
+{
+    border:1px solid #e0e0e0;
+}
+
+table tbody th
+{
+    background-color:#d0d0d0;
+    border:1px solid #e0e0e0;
+}
+
+table tbody td
+{
+    background-color:#ffffff;
+    border:1px solid #e0e0e0;
+}

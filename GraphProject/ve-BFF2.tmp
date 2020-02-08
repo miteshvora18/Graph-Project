@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+
+namespace GraphProject
+{
+    public partial class Default4 : System.Web.UI.Page
+    {
+        string conn = System.Configuration.ConfigurationManager.ConnectionStrings["graphConnection"].ConnectionString;
+        public int qid
+        {
+            get
+            {
+                if (Request.QueryString["qid"] != null)
+                {
+                    return Convert.ToInt32(Request.QueryString["qid"]);
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                SqlConnection con = null;
+                try
+                {
+                    con = new SqlConnection(conn);
+                    SqlCommand cmd = new SqlCommand("Select qlist from questions where qid="+qid,con);
+                    con.Open();
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        string selQs = dr[0].ToString();
+                        string[] s = selQs.Split(',');
+                        int cnt=s.Length;
+                        for (int i=1;i<=cnt;i++)
+                        {
+                            s[i].Remove(0, 3);
+                        }
+                    }
+                    con.Close();
+                }
+                catch (Exception e1)
+                {
+                    con.Close();
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alert", "alert('Error..Try Again')", true);
+                }
+            }
+        }
+    }
+}

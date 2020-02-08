@@ -1,0 +1,273 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B9793A4E-B516-4F98-B85C-C1A5E52A2703}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GraphProject</RootNamespace>
+    <AssemblyName>GraphProject</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Result.aspx.cs">
+      <DependentUpon>Result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Result.aspx.designer.cs">
+      <DependentUpon>Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectQs.aspx.cs">
+      <DependentUpon>SelectQs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectQs.aspx.designer.cs">
+      <DependentUpon>SelectQs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectAns.aspx.cs">
+      <DependentUpon>SelectAns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectAns.aspx.designer.cs">
+      <DependentUpon>SelectAns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="includes\Default.css" />
+    <Content Include="Login.aspx" />
+    <Content Include="User.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminHome.aspx" />
+    <Content Include="ClickImages\A111R.jpg" />
+    <Content Include="ClickImages\A112R.jpg" />
+    <Content Include="ClickImages\A11R.jpg" />
+    <Content Include="ClickImages\A121R.jpg" />
+    <Content Include="ClickImages\A122R.jpg" />
+    <Content Include="ClickImages\A12R.jpg" />
+    <Content Include="ClickImages\A1R.jpg" />
+    <Content Include="ClickImages\A211R.jpg" />
+    <Content Include="ClickImages\A212R.jpg" />
+    <Content Include="ClickImages\A21R.jpg" />
+    <Content Include="ClickImages\A221R.jpg" />
+    <Content Include="ClickImages\A222R.jpg" />
+    <Content Include="ClickImages\A22R.jpg" />
+    <Content Include="ClickImages\A2R.jpg" />
+    <Content Include="ClickImages\A311R.jpg" />
+    <Content Include="ClickImages\A312R.jpg" />
+    <Content Include="ClickImages\A31R.jpg" />
+    <Content Include="ClickImages\A321R.jpg" />
+    <Content Include="ClickImages\A322R.jpg" />
+    <Content Include="ClickImages\A32R.jpg" />
+    <Content Include="ClickImages\A3R.jpg" />
+    <Content Include="ClickImages\A411R.jpg" />
+    <Content Include="ClickImages\A412R.jpg" />
+    <Content Include="ClickImages\A41R.jpg" />
+    <Content Include="ClickImages\A421R.jpg" />
+    <Content Include="ClickImages\A422R.jpg" />
+    <Content Include="ClickImages\A42R.jpg" />
+    <Content Include="ClickImages\A4R.jpg" />
+    <Content Include="ClickImages\AR.jpg" />
+    <Content Include="Result.aspx" />
+    <Content Include="Test.aspx" />
+    <Content Include="SelectQs.aspx" />
+    <Content Include="SelectAns.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Images\LA1.gif" />
+    <Content Include="Images\LA11.gif" />
+    <Content Include="Images\LA111.gif" />
+    <Content Include="Images\LA112.gif" />
+    <Content Include="Images\LA12.gif" />
+    <Content Include="Images\LA121.gif" />
+    <Content Include="Images\LA122.gif" />
+    <Content Include="Images\LA2.gif" />
+    <Content Include="Images\LA21.gif" />
+    <Content Include="Images\LA211.gif" />
+    <Content Include="Images\LA212.gif" />
+    <Content Include="Images\LA22.gif" />
+    <Content Include="Images\LA3.gif" />
+    <Content Include="Images\LA31.gif" />
+    <Content Include="Images\LA32.gif" />
+    <Content Include="Images\LA4.gif" />
+    <Content Include="Images\LA41.gif" />
+    <Content Include="Images\LA42.gif" />
+    <Content Include="Image\A.jpg" />
+    <Content Include="Image\A1.jpg" />
+    <Content Include="Image\A11.jpg" />
+    <Content Include="Image\A111.jpg" />
+    <Content Include="Image\A112.jpg" />
+    <Content Include="Image\A12.jpg" />
+    <Content Include="Image\A121.jpg" />
+    <Content Include="Image\A122.jpg" />
+    <Content Include="Image\A2.jpg" />
+    <Content Include="Image\A21.jpg" />
+    <Content Include="Image\A211.jpg" />
+    <Content Include="Image\A212.jpg" />
+    <Content Include="Image\A22.jpg" />
+    <Content Include="Image\A221.jpg" />
+    <Content Include="Image\A222.jpg" />
+    <Content Include="Image\A3.jpg" />
+    <Content Include="Image\A31.jpg" />
+    <Content Include="Image\A311.jpg" />
+    <Content Include="Image\A312.jpg" />
+    <Content Include="Image\A32.jpg" />
+    <Content Include="Image\A321.jpg" />
+    <Content Include="Image\A322.jpg" />
+    <Content Include="Image\A4.jpg" />
+    <Content Include="Image\A41.jpg" />
+    <Content Include="Image\A411.jpg" />
+    <Content Include="Image\A412.jpg" />
+    <Content Include="Image\A42.jpg" />
+    <Content Include="Image\A421.jpg" />
+    <Content Include="Image\A422.jpg" />
+    <Content Include="includes\Main.css" />
+    <Content Include="includes\moontree.jpg" />
+    <Content Include="Main.Master" />
+    <Content Include="UserHome.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1272</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
